@@ -1,0 +1,104 @@
+[
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "study",
+        "time": "1-2"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Паша",
+        "goal": "travel",
+        "time": "7-10"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "study",
+        "time": "5-7"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "relocate",
+        "time": "5-7"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "study",
+        "time": "5-7"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "study",
+        "time": "5-7"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "study",
+        "time": "5-7"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Bkmz",
+        "goal": "travel",
+        "time": "7-10"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "travel",
+        "time": "5-7"
+    },
+    {
+        "phone": 2123121221,
+        "name": "Саша",
+        "goal": "travel",
+        "time": "7-10"
+    },
+    {
+        "phone": 1231313,
+        "name": "Саша",
+        "goal": "travel",
+        "time": "3-5"
+    },
+    {
+        "phone": 1231313,
+        "name": "Саша",
+        "goal": "relocate",
+        "time": "3-5"
+    },
+    {
+        "phone": 1231313,
+        "name": "sasa",
+        "goal": "travel",
+        "time": "1-2"
+    },
+    {
+        "phone": "375257995573",
+        "name": "Саша",
+        "goal": "work",
+        "time": "3-5"
+    },
+    {
+        "phone": "1231313213231",
+        "name": "Саша",
+        "goal": "travel",
+        "time": "7-10"
+    },
+    {
+        "phone": "43130i4391409",
+        "name": "sda",
+        "goal": "travel",
+        "time": "1-2"
+    },
+    {
+        "phone": "375257995573",
+        "name": "Прокудин",
+        "goal": "travel",
+        "time": "3-5"
+    }
+]

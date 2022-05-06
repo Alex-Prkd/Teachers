@@ -1,0 +1,275 @@
+[
+    {
+        "day": "Вторник",
+        "time": "8:00",
+        "teacher_id": 2,
+        "client_phone": 375257995573,
+        "client_name": "Александр"
+    },
+    {
+        "day": "Вторник",
+        "time": "8:00",
+        "teacher_id": 2,
+        "client_phone": 2123121221,
+        "client_name": "sasad"
+    },
+    {
+        "day": "Вторник",
+        "time": "8:00",
+        "teacher_id": 2,
+        "client_phone": 2123121221,
+        "client_name": "sdaasd"
+    },
+    {
+        "day": "Вторник",
+        "time": "8:00",
+        "teacher_id": 2,
+        "client_phone": 1231313,
+        "client_name": "dsaasfa"
+    },
+    {
+        "day": "Понедельник",
+        "time": "16:00",
+        "teacher_id": 1,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "16:00",
+        "teacher_id": 1,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "16:00",
+        "teacher_id": 5,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "18:00",
+        "teacher_id": 5,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "20:00",
+        "teacher_id": 5,
+        "client_phone": 2141488,
+        "client_name": "Илья"
+    },
+    {
+        "day": "Вторник",
+        "time": "8:00",
+        "teacher_id": 2,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Среда",
+        "time": "20:00",
+        "teacher_id": 2,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Вторник",
+        "time": "16:00",
+        "teacher_id": 4,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 1312312312,
+        "client_name": "Lfif"
+    },
+    {
+        "day": "Среда",
+        "time": "16:00",
+        "teacher_id": 9,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "16:00",
+        "teacher_id": 8,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "16:00",
+        "teacher_id": 11,
+        "client_phone": 2123121221,
+        "client_name": "Александр"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 2123121221,
+        "client_name": "sasd"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 2123121221,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 2,
+        "client_name": "sas"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 1231313,
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 21,
+        "client_name": "sas"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 12,
+        "client_name": "das"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": 1231313,
+        "client_name": "sa"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "dasdsa",
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "sadssadasdsads",
+        "client_name": "sa"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "212312122121",
+        "client_name": "dsa"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "123131323112",
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "375257995573",
+        "client_name": "sa"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "375257995573",
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "375257995573",
+        "client_name": "Саша"
+    },
+    {
+        "day": "Понедельник",
+        "time": "10:00",
+        "teacher_id": 0,
+        "client_phone": "375257995573",
+        "client_name": "Саша"
+    },
+    {
+        "day": "monday",
+        "time": "10:00",
+        "teacher_id": "0",
+        "client_phone": "123456789912",
+        "client_name": "Саша"
+    },
+    {
+        "day": "sunday",
+        "time": "16:00",
+        "teacher_id": "61",
+        "client_phone": "375257995573",
+        "client_name": "dsaasfa"
+    },
+    {
+        "day": "monday",
+        "time": "16:00",
+        "teacher_id": "72",
+        "client_phone": "375257995573",
+        "client_name": "Прокудин"
+    },
+    {
+        "day": "monday",
+        "time": "16:00",
+        "teacher_id": "72",
+        "client_phone": "375257995573",
+        "client_name": "Прокудин"
+    },
+    {
+        "day": "tuesday",
+        "time": "20:00",
+        "teacher_id": "81",
+        "client_phone": "375257995573",
+        "client_name": "Прокудин"
+    }
+]

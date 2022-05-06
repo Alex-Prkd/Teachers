@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <main class="container mt-5">
+    <div class="col-12 col-sm-10 col-lg-6 offset-lg-3 offset-sm-1">
+      <form action="{{ url_for('request_view') }}" method="post" class="card mb-5">
+        {{ select.hidden_tag() }}
+        <div class="card-body text-center pt-5">
+          <h1 class="h3 card-title mt-4 mb-2">Подбор преподавателя</h1>
+          <p class="px-5">Напишите, чего вам нужно и&nbsp;мы&nbsp;подберем отличных&nbsp;ребят</p>
+        </div>
+        <hr>
+        <div class="card-body mx-3">
+          <div class="row">
+            <div class="col">
+              <p>Какая цель занятий?</p>
+                {% for subfield in select.select_goal %}
+                  <div class="form-check">{{ subfield(class_="form-check-input") }}
+                  {{ subfield.label(class_="form-check-label") }}</div>
+                {% endfor %}
+            </div>
+            <div class="col">
+              <p>Сколько времени есть?</p>
+              {% for time in select.select_time %}
+                <div class="form-check">{{ time(class_="form-check-input") }}
+                {{ time.label(class_="form-check-label") }}</div>
+              {% endfor %}
+          </div>
+        </div>
+        <hr>
+        {{ select.csrf_token() }}
+        <div class="card-body mx-3">
+          {{ select.client_name.label(class_="mb-1 mt-2") }}
+          {% if select.client_name.errors %}
+            {{ select.client_name(class_="form-control") }}
+              {% for err in select.client_name.errors %}
+                <p class="error">{{ err }}</p>
+              {% endfor %}
+          {% else %}
+            {{ select.client_name(class_="form-control") }}
+          {% endif %}
+
+          {{ select.client_phone.label(class_="mb-1 mt-2") }}
+          {% if select.client_phone.errors %}
+            {{ select.client_phone(class_="form-control") }}
+            {% for error in select.client_phone.errors %}
+              <p class="error">{{ error }}</p>
+            {% endfor %}
+          {% else %}
+            {{ select.client_phone(class_="form-control") }}
+          {% endif %}
+
+
+          <input type="submit" class="btn btn-primary mt-4 mb-2" value="Найдите мне преподавателя">
+        </div>
+        </div>
+      </form>
+    </div>
+  </main>
+{% endblock %}

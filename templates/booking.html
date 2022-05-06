@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <main class="container mt-3">
+    <div class="row mt-5">
+      <div class="col-10 col-md-6 offset-1 offset-md-3 mb-3">
+        <form action="{{ url_for('booking', id=teacher.id, day=list_days[1], time=time) }}"
+              method="post" class="card mb-3">
+          <div class="card-body text-center pt-5">
+            <img src="{{ teacher.picture }}" class="mb-3" width="200" alt="">
+            <h2 class="h5 card-title mt-2 mb-2">{{ teacher.name }}</h2>
+            <p class="my-1">Запись на пробный урок </p>
+            <p class="my-1">{{ list_days[0] }}, {{ time }}:00</p>
+          </div>
+          <hr />
+          <div class="card-body mx-3">
+               <div class="row">
+                  <input class="form-control" type="hidden" name="weekday" value="{{ list_days[1] }}">
+                  <input class="form-control" type="hidden" name="time" value="{{ time }}:00">
+                  <input class="form-control" type="hidden" name="teacher" value="{{ teacher.id }}">
+              </div>
+
+            {{ form.csrf_token() }}
+            {{ form.client_name.label(class='mb-1 mt-2') }}
+            {% if form.client_name.errors %}
+              {{ form.client_name(class_="form-control") }}
+                {% for error in form.client_name.errors %}
+                  <p class="error"> {{ error }}</p>
+                {% endfor %}
+            {% else %}
+              {{ form.client_name(class_="form-control") }}
+            {% endif %}
+
+            {{ form.client_phone.label(class='mb-1 mt-2') }}
+            {% if form.client_phone.errors %}
+              {{ form.client_phone(class_="form-control") }}
+                  {% for error in form.client_phone.errors %}
+                      <p class="error">{{ error }}</p>
+                  {% endfor %}
+            {% else %}
+              {{ form.client_phone(class_="form-control") }}
+            {% endif %}
+            <input class="btn btn-primary btn-block mt-4" type="submit" value="Записасаться на пробный урок">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+{% endblock %}
+
