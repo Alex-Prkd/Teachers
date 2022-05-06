@@ -311,12 +311,13 @@ def booking(id, day, time):
         db.session.commit()
         return redirect(url_for('booking_done'))
     else:
+        day_ru = Day.query.filter(Day.key_en == day).scalar()
         return render_template(
             'booking.html',
             title=f'{NAME_SITE} - Запись.',
             form=form,
             teacher=teacher,
-            list_days=list_days[day[:3]],
+            day=day_ru.value_ru,
             time=time,
         )
 
