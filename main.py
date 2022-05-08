@@ -295,7 +295,7 @@ def booking(id, day, time):
         abort(404)
     if form.validate_on_submit():
         session['booking'] = {
-            "day": form.weekday.data,
+            "day": day,
             "time": form.time.data,
             "teacher_id": form.teacher.data,
             "client_phone": form.client_phone.data,
@@ -317,7 +317,7 @@ def booking(id, day, time):
             title=f'{NAME_SITE} - Запись.',
             form=form,
             teacher=teacher,
-            day=day_ru.value_ru,
+            day=day_ru,
             time=time,
         )
 
@@ -325,9 +325,9 @@ def booking(id, day, time):
 @app.route('/booking_done/', methods=['POST', 'GET'])
 def booking_done():
     if request.method == 'POST' or request.method == 'GET':
-        day = Day.query.filter(Day.value_en == session['booking']['day']).first()
-        return render_template('booking_done.html', list_days=list_days,
-                               day=day.value_ru,
+        day = session['booking']['day']
+        return render_template('booking_done.html',
+                               day=list_days[day][0],
                                time=session['booking']['time'],
                                name=session['booking']['client_name'],
                                phone=session['booking']['client_phone'],
@@ -336,4 +336,4 @@ def booking_done():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

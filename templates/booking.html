@@ -5,18 +5,18 @@
   <main class="container mt-3">
     <div class="row mt-5">
       <div class="col-10 col-md-6 offset-1 offset-md-3 mb-3">
-        <form action="{{ url_for('booking', id=teacher.id, day=day, time=time) }}"
+        <form action="{{ url_for('booking', id=teacher.id, day=day.key_en, time=time) }}"
               method="post" class="card mb-3">
           <div class="card-body text-center pt-5">
             <img src="{{ teacher.picture }}" class="mb-3" width="200" alt="">
             <h2 class="h5 card-title mt-2 mb-2">{{ teacher.name }}</h2>
             <p class="my-1">Запись на пробный урок </p>
-            <p class="my-1">{{ day }}, {{ time }}:00</p>
+            <p class="my-1">{{ day.value_ru }}, {{ time }}:00</p>
           </div>
           <hr />
           <div class="card-body mx-3">
                <div class="row">
-                  <input class="form-control" type="hidden" name="weekday" value="{{ day }}">
+                  <input class="form-control" type="hidden" name="weekday" value="{{ day.value_ru }}">
                   <input class="form-control" type="hidden" name="time" value="{{ time }}:00">
                   <input class="form-control" type="hidden" name="teacher" value="{{ teacher.id }}">
               </div>
