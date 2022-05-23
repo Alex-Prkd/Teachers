@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-5"></div>
+                    <h2 class="h6">
+                        <form class="float-right d-inline-block" action="{{ url_for('auth') }}" method="post">
+                            <div class="form-inline">
+                                {{ form.hidden_tag() }}
+                                   <p>{{ form.username.label }}
+                                      {{ form.username(class_="lead float-left d-inline-block mt-2 mb-0") }}
+                            </div>
+                            <div class="form-inline">
+                                <p>{{ form.password.label }}
+                                {{ form.password(class_="lead float-left d-inline-block mt-2 mb-0") }}
+                            </div>
+                            <div class="form-inline mx-4">
+                                <button type="submit" class="btn btn-primary my-0 mx-5">Вход</button>
+                            </div>
+                            <div class="form-inline my-4 mx-2">
+                                <a class="form-inline mx-5" href="{{ url_for('register') }}">Регистрация</a>
+                            </div>
+                        </form>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+{% endblock %}

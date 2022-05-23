@@ -19,6 +19,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          <li class="nav-item {% if request.path == url_for('auth') %} active {% endif %}">
+            <a class="nav-link" href="{{ url_for('auth') }}">Вход</a>
+          </li>
           <li class="nav-item {% if request.path == url_for('all_teachers') %}active{% endif %}">
             <a class="nav-link" href="{{ url_for('all_teachers') }}">Все репетиторы</a>
           </li>
